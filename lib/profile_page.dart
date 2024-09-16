@@ -28,30 +28,30 @@ class ProfilePage extends StatelessWidget {
             //   ],
             // ),
             const Text('This is your profile page'),
-            // const SizedBox(height: 20),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //         builder: (context) => const EditScreen(),
-            //       ),
-            //     );
-            //   },
-            //   child: const Text('Edit Profile'),
-            // ),
-            // const SizedBox(height: 20),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     Navigator.pushReplacement(
-            //       context,
-            //       MaterialPageRoute(
-            //         builder: (context) => const ExitScreen(),
-            //       ),
-            //     );
-            //   },
-            //   child: const Text('Exit Profile'),
-            // ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const EditScreen(),
+                  ),
+                );
+              },
+              child: const Text('Edit Profile'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ExitScreen(),
+                  ),
+                );
+              },
+              child: const Text('Exit Profile'),
+            ),
           ],
         ),
       ),
