@@ -39,15 +39,15 @@ class ButtonScreen extends StatelessWidget {
               },
             ),
             const SizedBox(height: 20),
-            // ElevatedButton(
-            //   child: const Text('Profile Page'),
-            //   onPressed: () {
-            //     Navigator.push(
-            //         context,
-            //         MaterialPageRoute(
-            //             builder: (context) => const ProfilePage()));
-            //   },
-            // ),
+            ElevatedButton(
+              child: const Text('Profile Page'),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ProfilePage()));
+              },
+            ),
             const SizedBox(height: 20),
           ],
         ),
