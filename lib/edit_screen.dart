@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class EditScreen extends StatelessWidget {
   const EditScreen({super.key});
@@ -11,9 +12,17 @@ class EditScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.lightBlue.shade300,
       ),
-      body: const Center(
-        child: Text('This is your edit profile page'),
-      ),
+      body: Center(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        const Text('This is your edit profile page'),
+        const SizedBox(height: 20),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text('Pop back'),
+        ),
+      ])),
     );
   }
 }
